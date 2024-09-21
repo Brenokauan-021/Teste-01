@@ -1,0 +1,122 @@
+
+*{ 
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    list-style: none;
+
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+body{
+    background-color: rgb(151, 155, 160);
+}
+
+
+/* cabecalho e navegação */
+
+header{
+    background-color: white;
+    padding: 1em;
+    margin: 1em;
+
+    text-align: center;
+}
+
+header h1{
+    margin-bottom: .6em;
+}
+
+header ul li{
+    display: inline-block;
+    margin-left: 0.3em;  
+}
+
+header a {
+    color: white;
+    padding: .4em;
+    
+    background-color: black;
+}
+
+header ul li:hover a{
+    background-color: rgba(0, 0, 0, 0.699);
+}
+
+/* corpo principal */
+
+main{
+    background-color: white;
+    padding: 1em;
+    margin: 1em;
+    /* text-align: justify; */
+    
+}
+
+section article{
+    padding: 1em;
+}
+
+article p{
+    margin-top:1em;
+
+}
+
+article aside a{
+    color: rgb(73, 115, 192);
+}
+
+.alternativo a{
+    color:  rgb(127, 169, 247);;
+}
+
+article a:hover{
+    opacity: .5;
+}
+
+.alternativo{
+    background-color: rgba(0, 0, 0, 0.753);
+    color: white;
+}
+
+aside{
+    text-align: right;
+}
+
+/* rodapé */
+
+footer{
+    padding: 1em;
+    margin: 1em;
+
+    text-align: center;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.76);
+}
+
+footer a{
+    color: rgb(151, 151, 255);
+}
+
+footer a:hover{
+    color: rgb(93, 93, 240);
+    cursor: pointer;
+}
+
+/* EXTRAS -- responsividade */
+
+@media (max-width: 550px) {
+
+    li{
+        display: block;
+    }
+
+    header a {
+        color: white;   
+        background-color: black;
+        display: block;
+        margin-bottom: .5em;
+    }
+    
+}
